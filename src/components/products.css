@@ -1,0 +1,124 @@
+.products{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #eee;
+}
+.products .row{
+  background-color: #f7fafe;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+
+}
+.product{
+  position: relative;
+  /* overflow: hidden; */
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .3s ease-in-out ;
+
+  align-items: center;
+
+}
+.product .product-image{
+  width: 100%;
+  height: 100%;
+  transition: .7s all ease-in-out;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+
+}
+.image-container{
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product:hover .product-image{
+  transform: scale(1.1);
+}
+.product .product-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.product .product-title:nth-child(1){
+  font-size: 19px;
+  color:#376291;
+
+}
+.product .product-title .icons{
+  color: rgb(231, 208, 57);
+  display: flex;
+}
+.caption{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.caption span{
+  font-size: 15px;
+}
+
+.product .product-desc{
+position: absolute;
+background-color: rgba(0,0,0,.8);
+color: #eee;
+padding: 10px 15px;
+font-size: .8rem;
+/* width: -webkit-fill-avaliable; */
+bottom: -195px;
+transition: all .3s ease-in-out ;
+left: -5px;
+display: none;
+}
+.product:hover .product-desc{
+  bottom: 25px;
+  display: block;
+}
+
+.product .product-price{
+color: #fff;
+font-size: 1rem;
+position: absolute;
+top: 8px;
+right: 10px;
+background-color: #d85155;
+padding: 3px;
+text-align: center;
+border-radius: 4px;
+}
+.adding-cart{
+  display: flex;
+  padding-bottom: 8px;
+  justify-content: space-between;
+
+}
+.adding-cart span{
+  color: #10cfc4;
+    font-size: 16px;
+
+}
+.adding-cart svg{
+font-size: 23px;
+transition: all .2s ease;
+color: #01b6cb;
+
+}
+.adding-cart svg:hover{
+color: #d85155;
+}

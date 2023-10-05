@@ -1,0 +1,150 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.3rem 2rem;
+  height: 75px;
+  background-color: #eee;
+  width: 100vw;
+
+}
+
+.logo {
+  color: #01b6cb;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -10px;
+
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  width: 75%;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  list-style-type: none;
+  color: rgb(59, 57, 57);
+  margin: 0 20px;
+  /* padding: 10px 20px; */
+}
+
+.nav-links>*:hover {
+  color: #01b6cb;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  width: 75%;
+
+}
+
+.nav-links-mobile a {
+  margin-left: 20px;
+  list-style-type: none;
+  color: white;
+  margin: 0 20px;
+
+}
+
+.nav-links-mobile>*:hover {
+  color: #01b6cb;
+
+}
+
+@media screen and (max-width: 840px) {
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+    transition: all .5s ease-out;
+
+  }
+
+  .nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+
+    margin-top: -5px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    position: absolute;
+    list-style-type: none;
+    width: 104%;
+    left: -26px;
+    top: 75px;
+    transition: all 1s ease-out;
+    background-color: #212529;
+    z-index: 19;
+
+
+  }
+
+  .nav-links-mobile>* {
+    color: whitesmoke;
+    transition: all 1s ease-out;
+    width: 100%;
+    text-align: center;
+    padding: 32px;
+  }
+
+  .nav-links-mobile>*:hover {
+    color: #e89204;
+
+  }
+}
+
+.scrolltop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(220, 31, 31);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease-in;
+  z-index: 1000;
+}
+
+.scrolltop svg {
+  font-size: 20px;
+  color: #fff;
+
+}
+
+.scrolltop:hover {
+  background-color: rgb(250, 70, 70);
+}

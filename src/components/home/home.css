@@ -1,0 +1,14 @@
+.home{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../../images/2484120.jpg");
+  
+}
+@media  screen and (max-width:470px) {
+  .home{
+    height: 150vh;
+
+  }
+  
+}

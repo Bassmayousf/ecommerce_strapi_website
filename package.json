@@ -1,5 +1,8 @@
 {
+  "homepage":"http://Bassmayousf.github.io/strapi_ecommerce",
+
   "name": "clinets",
+
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,12 +10,11 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy":"gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "homepage":"http://Bassmayousf.github.io/strapi_ecommerce",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.5.0",
     "bootstrap": "^5.3.1",
